@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Abinaya Times and Gift Shop - Your one-stop destination for customized gifts and personalized items. Quality products at affordable prices.">
+    <title>Abinaya Times and Gift Shop - Customized Gifts & More</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <span class="logo-text">Abinaya Times & Gift Shop</span>
+            </a>
+
+            <div class="header-search">
+                <input type="text" placeholder="Search for products..." id="headerSearchInput">
+                <button type="button" id="headerSearchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" id="categoriesBtn">Categories <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" id="navCategories">
+                            <!-- Categories will be loaded dynamically -->
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <button class="icon-btn mobile-search-btn" id="mobileSearchBtn" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="https://wa.me/919043715876" class="icon-btn whatsapp-header" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="close-search" id="closeSearch">
+                <i class="fas fa-times"></i>
+            </button>
+            <input type="text" placeholder="Search for products..." class="search-input" id="searchInput">
+            <button class="search-submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to <span class="highlight">Abinaya Times</span> & Gift Shop</h1>
+                    <p class="hero-subtitle">All Customized Items Are Available</p>
+                    <p class="hero-description">Discover unique personalized gifts and
+                        memorable keepsakes for every occasion</p>
+                    <div class="hero-buttons">
+                        <a href="#categories" class="btn btn-primary">
+                            <i class="fas fa-shopping-bag"></i> Shop Now
+                        </a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decorations">
+            <div class="decoration decoration-1"></div>
+            <div class="decoration decoration-2"></div>
+            <div class="decoration decoration-3"></div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Categories</h2>
+                <p class="section-subtitle">Explore our wide range of customized products</p>
+            </div>
+            <div class="categories-grid">
+                <!-- Categories will be dynamically loaded via script.js -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Premium Quality</h3>
+                        <p>High-quality materials & printing</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Best Prices</h3>
+                        <p>Affordable customized products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Abinaya Times & Gift Shop</h2>
+                    <p class="about-description">
+                        Welcome to <strong>Abinaya Times & Gift Shop</strong> your trusted destination for
+                        high-quality customized gifts and personalized products. We specialize in creating unique,
+                        memorable items that celebrate life's special moments.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-decoration">
+                        <div class="gift-illustration">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p><a href="https://maps.app.goo.gl/2vqz2nPVzLgnihjYA" target="_blank"
+                                    style="color: inherit; text-decoration: none;">A1, Cement road<br>,Thiruthangal,
+                                    Sivakasi, Tamil Nadu 626130</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+919043715876" style="color: inherit; text-decoration: none;">+91 90437
+                                    15876</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:abinayatimes@gmail.com?subject=Inquiry%20from%20Website"
+                                    style="color: inherit; text-decoration: none;">abinayatimes@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>shop open&close time</h3>
+                            <p>Mon - Sat: 9:00 AM - 10:00 PM<br>Sunday: 10:00 AM - 9:30PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-animation-container simple-animation">
+                    <div class="simple-animation-wrapper">
+                        <div class="animation-item gift-item">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="animation-item watch-item">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="simple-animation-text">
+                        <h3>Customized For You</h3>
+                        <p>Unique gifts and timeless watches for every special occasion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <span>Abinaya Times & Gift Shop</span>
+                    </a>
+                    <p class="footer-description">
+                        Your trusted destination for customized gifts and personalized products. Creating memories, one
+                        gift at a time.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/abinaya_times_gifts/" class="social-link" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919043715876" class="social-link" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abinaya Times & Gift Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919043715876" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
